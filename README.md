@@ -25,9 +25,9 @@ POST /customer/signup          # Sign-up with firstName, LastName, email and pas
 ```
 ## Order Rest APIs
 ```java
-POST /order/new                # Cretae new order with token and bookId
-GET  /order/details            # Get order details with token and orderId
-GET  /order/all                # Get all order with token and user authentication info
+POST /orders/new                # Cretae new order with token and bookId
+GET  /orders/details            # Get order details with token and orderId
+GET  /orders/all                # Get all order with token and user authentication info
 ```
 ## Book Rest APIs
 ```java
