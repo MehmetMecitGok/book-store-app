@@ -1,6 +1,6 @@
 # Book Store App
 
-* Book Store Webservice, Spring Boot, Gradle, Spring Swcurity, Authentication, Java Restful Web API Project.
+* Book Store Webservice, Spring Boot, Gradle, Spring Security, Authentication, Java Restful Web API Project.
 * Application will start at port 8080
 
 ## Requirements
