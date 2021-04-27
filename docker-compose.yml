@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app:
+    container_name: bookstoredocker
+    image: bookstoredocker
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-db
+    networks:
+      - bookstore-network
+    environment:
+      DATASOURCE_HOST: postgres-db
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: bookstoredb
+    networks:
+      - bookstore-network
+networks:
+      bookstore-network:
